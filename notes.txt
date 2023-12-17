@@ -1,0 +1,10 @@
+model 1: naive model
+model 2: hour-classification model
+model 3: autoregressive model
+model 4: GLM with autoregression + hour classification
+
+Further development ideas: 
+-scraping for news, convert to binary-level factor
+-Daylight savings
+-Public holidays, convert to binary-level factor
+-

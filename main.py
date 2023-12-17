@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.regression import linear_model
 df = pd.read_csv("assets/2023.12.17EURUSD(2)_TICK_UTCPlus02-TICK-No Session.csv")
 #visualise the df
 #print(df)
@@ -25,3 +27,28 @@ plt.xlabel('Hour')
 plt.ylabel('Spread')
 plt.title('Boxplot of Spread for each Hour')
 plt.show()'''
+
+#test new model
+
+#Checking for autoregression factor at lag 1
+df['SpreadLag1'] = df['Spread'].shift(1)
+df = df.dropna()
+'''
+plt.scatter(df['SpreadLag1'], df['Spread'], label='Spread vs Spread at lag 1', s = 5)
+plt.legend()
+plt.show()'''
+
+# Fit a linear regression model (Includes series of 1s for constant coef)
+model = linear_model.OLS(df['Spread'], pd.concat([df['SpreadLag1'], pd.Series(1, index=df.index)], axis=1))
+results = model.fit()
+
+# Print regression summary
+print(results.summary())
+'''df = df.iloc[:100000,:]
+#Perform Dicky-Fuller Test on stationarity
+result = adfuller(df['Spread'])
+
+# Extract and print the test statistics and p-value
+test_statistic, p_value, _, _, _, _ = result
+print(f'Test Statistic: {test_statistic}')
+print(f'P-value: {p_value}')'''
