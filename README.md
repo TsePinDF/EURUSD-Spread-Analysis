@@ -44,6 +44,6 @@ model 4: GLM with autoregression + hour classification<br><br>
 
 ## Additional Notes and Graphs <br><br>
 ![FigExtra1](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot4.png)<br>
-Plot of differencing lags [(Spread - Lag1 Spread) vs (Lag1 Spread vs Lag2 Spread)]<br><br>
+Plot of differencing lags [Delta at t vs Delta at t-1]<br><br>
 To do and update test for significance later
 
