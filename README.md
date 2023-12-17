@@ -10,6 +10,16 @@ Commissions are often constant values but spreads are highly variable, which may
 affect the testing speculative and investment models.<br><br>
 Sample Data in repo retrieved from DukasCopy by QuantDataManager, 2023/11/15 - 2023/12/15, UTC + 2
 
-Step 1: Visualise the naked dataset (line 19) <br><br>
+Step 1: Visualise the naked dataset <br><br>
 ![Fig 1.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot1.png)<br>
-Fig 1. Screenshot of initial plot of Spread vs Index (ordered by time of price tick)
+Fig 1. Screenshot of initial plot of Spread vs Index (ordered by time of price tick)<br><br>
+Primary observations:<br>
+    1. There appears to be (slightly consistent) seasons of spikes in spreads
+    2. Outside of the spikes, spreads sppear to vary around a relatively consistent range
+<br><br>
+That being said, we need to validate these observations.<br>
+We know that trading sessions exist, and that liquidity may be time-dependent, so we could first try to classify the datasets based on the hour of day. <br><br>
+Step 2: Box plot of spread range vs Hour-Of-Day <br><br>
+![FIg 2.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot2.png)
+
+
