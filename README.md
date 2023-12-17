@@ -25,12 +25,25 @@ We know that trading sessions exist, and that liquidity may be time-dependent, s
 <br>
 Fig 2. Box Plot of Spread Ranges vs Hour-Of-Day<br><br>
 Already, we could see a potential pattern when we use Hours as a classification factor.<br>
-For the most preliminary model, we could build a simple classification model with 1 factor and 24 levels.<br><br>
 
 ### Step 3: Scatter plot of Spread vs t-1 Spread <br><br>
 Preliminary analysis (Fig 1) of the dataset also suggests some form of autoregressive behaviour (low spreads precede low spreads, high spreads precede high spreads). We could test that first by plotting the spread against the its t-1 value<br><br>
 ![Fig 3.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot3.png)
 <br>
-Fig 3. Scatter Plot of Spread vs t-1 Spread
+Fig 3. Scatter Plot of Spread vs t-1 Spread<br>
+Visually, we could see another potential linear relationship between the the spread and its lagged value. This should provide sufficient information to build a few basic models<br>
 
+## Model building <br> <br>
+This project will primarily focuses on simplistic models using the features available, so below are the current approaches we will be comparing:<br>
+model 1: naive model<br>
+model 2: hour-classification model<br>
+model 3: SLR autoregressive model<br>
+model 4: GLM with autoregression + hour classification<br><br>
+
+<br>
+
+## Additional Notes and Graphs <br><br>
+![FigExtra1](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot4.png)<br>
+Plot of differencing lags [(Spread - Lag1 Spread) vs (Lag1 Spread vs Lag2 Spread)]<br><br>
+To do and update test for significance later
 

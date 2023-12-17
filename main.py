@@ -28,22 +28,31 @@ plt.ylabel('Spread')
 plt.title('Boxplot of Spread for each Hour')
 plt.show()'''
 
-#test new model
-
 #Checking for autoregression factor at lag 1
 df['SpreadLag1'] = df['Spread'].shift(1)
+df['SpreadDelta1'] = df['Spread'] - df['Spread'].shift(1)
+df['SpreadDelta2'] = df['Spread'].shift(1) - df['Spread'].shift(2)
 df = df.dropna()
 '''
 plt.scatter(df['SpreadLag1'], df['Spread'], label='Spread vs Spread at lag 1', s = 5)
 plt.legend()
-plt.show()'''
+plt.show()
+'''
+
+'''
+plt.scatter(df['SpreadDelta2'], df['SpreadDelta1'], label='Spread Increment vs Lag 1 Increment', s = 5)
+plt.legend()
+plt.show()
+'''
+
+#test new model (to-do)
 
 # Fit a linear regression model (Includes series of 1s for constant coef)
-model = linear_model.OLS(df['Spread'], pd.concat([df['SpreadLag1'], pd.Series(1, index=df.index)], axis=1))
-results = model.fit()
+#model = linear_model.OLS(df['Spread'], pd.concat([df['SpreadLag1'], pd.Series(1, index=df.index)], axis=1))
+#results = model.fit()
 
 # Print regression summary
-print(results.summary())
+#print(results.summary())
 '''df = df.iloc[:100000,:]
 #Perform Dicky-Fuller Test on stationarity
 result = adfuller(df['Spread'])
