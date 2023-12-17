@@ -25,6 +25,7 @@ We know that trading sessions exist, and that liquidity may be time-dependent, s
 <br>
 Fig 2. Box Plot of Spread Ranges vs Hour-Of-Day<br><br>
 Already, we could see a potential pattern when we use Hours as a classification factor.<br>
+Large spreads tend to appear consistently at midnight, as well as certain windows of the day.<br>
 
 ### Step 3: Scatter plot of Spread vs t-1 Spread <br><br>
 Preliminary analysis (Fig 1) of the dataset also suggests some form of autoregressive behaviour (low spreads precede low spreads, high spreads precede high spreads). We could test that first by plotting the spread against the its t-1 value<br><br>
