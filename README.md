@@ -22,6 +22,6 @@ We know that trading sessions exist, and that liquidity may be time-dependent, s
 Step 2: Box plot of spread range vs Hour-Of-Day <br><br>
 ![Fig 2.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot2.png)
 <br>
-Fig 2. Box Plot of Spread Ranges vs Hour-Of-Day
+Fig 2. Box Plot of Spread Ranges vs Hour-Of-Day<br><br>
 Already, we could see a potential pattern when we use Hours as a classification factor.<br>
 For the most preliminary model, we could build a simple classification model with 1 factor and 24 levels.
