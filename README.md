@@ -1,6 +1,6 @@
 # Portfolio1_EURUSDSpreadAnalysis
 
-Exploratory Data Analysis on Dukascopy EURUSD tick data
+Exploratory Analysis and Modelling on Dukascopy EURUSD tick data
 
 ## Preliminary analysis
 
