@@ -10,5 +10,6 @@ Commissions are often constant values but spreads are highly variable, which may
 affect the testing speculative and investment models.<br><br>
 Sample Data in repo retrieved from DukasCopy by QuantDataManager, 2023/11/15 - 2023/12/15, UTC + 2
 
-Step 1: Visualise the naked model (line 19) <br><br>
-![Screenshot of initial plot of Spread vs Index (ordered by time of price tick)](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/First%20Plot.png)
+Step 1: Visualise the naked dataset (line 19) <br><br>
+!(https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/First%20Plot.png)<br>
+Fig 1. Screenshot of initial plot of Spread vs Index (ordered by time of price tick)
