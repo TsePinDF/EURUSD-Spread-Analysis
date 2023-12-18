@@ -46,11 +46,17 @@ plt.show()
 '''
 
 #test new model (to-do)
+#basic classification model, with categorical dummy variables
+dummy_df = pd.get_dummies(df['Hour'], prefix = 'category').astype(int)
+dummy_df = dummy_df.iloc[:,1:]
+dummy_df['Constant'] = pd.Series(1, index=df.index)
+model1 = linear_model.OLS(df['Spread'], dummy_df[list(dummy_df.columns)])
+results = model1.fit() 
+print(results.summary())
 
 # Fit a linear regression model (Includes series of 1s for constant coef)
-#model = linear_model.OLS(df['Spread'], pd.concat([df['SpreadLag1'], pd.Series(1, index=df.index)], axis=1))
+# model = linear_model.OLS(df['Spread'], pd.concat([df['SpreadLag1'], pd.Series(1, index=df.index)], axis=1))
 #results = model.fit()
-
 # Print regression summary
 #print(results.summary())
 '''df = df.iloc[:100000,:]
