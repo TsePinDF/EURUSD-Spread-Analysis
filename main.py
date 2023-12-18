@@ -47,9 +47,11 @@ plt.show()
 
 #test new model (to-do)
 #basic classification model, with categorical dummy variables
+#dummy encoding of k-1 levels
 dummy_df = pd.get_dummies(df['Hour'], prefix = 'category').astype(int)
 dummy_df = dummy_df.iloc[:,1:]
-dummy_df['Constant'] = pd.Series(1, index=df.index)
+#intercept represents hour 0
+dummy_df['Intercept'] = pd.Series(1, index=df.index)
 model1 = linear_model.OLS(df['Spread'], dummy_df[list(dummy_df.columns)])
 results = model1.fit() 
 print(results.summary())
