@@ -42,7 +42,7 @@ model 3: SLR AR1 model<br>
 model 4: GLM with AR1 + hour classification<br><br>
 *modelling test results can be found under results.txt in assets*<br><br>
 Summary: We have:<br>
-Model 1: $\sum_{i=1}^{k-1} 	\tau_{i} T_{i}$
+Model 1: $\sum_{i=1}^{k-1}$ 	$\tau_{i} T_{i}$
 
 
 <br>
