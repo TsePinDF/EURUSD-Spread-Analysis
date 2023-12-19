@@ -43,9 +43,9 @@ model 4: GLM with AR1 + hour classification<br><br>
 *modelling test results can be found under results.txt in assets*<br><br>
 Summary: <br>
 We have:<br>
-Model 1: $$Y = \overline{y}$$ ,<br>
-Model 2: $$Y = \sum_{i=1}^{23} \tau_{i} T_{i}$$, for dummy variables $T_{i}$, and treament coefficients $\tau_{i}$
-
+Model 1: $$Y = \overline{y} = SST(S_{yy}) + \epsilon$$ ,<br>
+Model 2: $$Y = \sum_{i=1}^{23} \tau_{i} T_{i} + \epsilon$$, for dummy variables $T_{i}$, and treament coefficients $\tau_{i}$<br>
+Model 3: $$Y = B X + \epsilon$$
 
 <br>
 
