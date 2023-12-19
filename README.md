@@ -40,7 +40,8 @@ model 1: naive model<br>
 model 2: hour-classification model<br>
 model 3: SLR AR1 model<br>
 model 4: GLM with AR1 + hour classification<br><br>
-*modelling test results can be found under results.txt in assets*<br><br>
+*modelling test results can be found under results.txt in assets*<br>
+<br><br>
 Summary: estimating spread (y) at ith time index, we have:<br>
 Model 1: $$y_{i} = \overline{y} + \epsilon_{i}$$ ,<br>
 Model 2: $$y_{i} = \sum_{i=1}^{23} \tau_{i} T_{i} + \epsilon_{i}$$, for dummy variables $T_{i}$, and treament coefficients $\tau_{i}$<br>
@@ -58,6 +59,13 @@ $Adj R^{2} = 0.826$ <br>
 Model 4:<br>
 $SSE = 0.0003504725457872613$ <br>
 $Adj R^{2} = 0.832$ <br>
+<br>
+## Additional tests<br>
+We should perform a test for stationarity before any modelling. As the dataset is too large for my local machine, I performed an Adjusted Dicky-Fuller test on the first 200,000 data points. We are testing for null hypothesis that a unit root exists in the sample. <br>
+$Test Statistic: -11.861966...$
+$p-value: 6.813351...e^{-22}$<br><br>
+With this, we can reject $H_{0} and assume that the dataset is stationary.
+
 
 
 
