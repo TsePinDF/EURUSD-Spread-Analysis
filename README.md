@@ -45,7 +45,17 @@ Summary: estimating spread (y) at ith time index, we have:<br>
 Model 1: $$y_{i} = \overline{y} + \epsilon_{i}$$ ,<br>
 Model 2: $$y_{i} = \sum_{i=1}^{23} \tau_{i} T_{i} + \epsilon_{i}$$, for dummy variables $T_{i}$, and treament coefficients $\tau_{i}$<br>
 Model 3: $$y_{i} = B y_{i-1} + \epsilon_{i}$$
-Model 4: $$y_{i} = \sum_{i=1}^{23} \tau_{i} T_{i} + B y_{i-1} + \epsilon_{i}$$
+Model 4: $$y_{i} = \sum_{i=1}^{23} \tau_{i} T_{i} + B y_{i-1} + \epsilon_{i}$$<br><br>
+Performance for models:<br>
+Model 1: <br>
+$SSE = SST = 0.002084023259183432$ <br>
+Model 2:<br>
+$SSE = 0.0012556210936629866$ <br>
+$Adjusted R^{2} = 0.397$ <br>
+
+
+
+
 
 <br>
 
