@@ -38,8 +38,12 @@ Visually, we could see another potential linear relationship between the the spr
 This project will primarily focuses on simplistic models using the features available, so below are the current approaches we will be comparing:<br>
 model 1: naive model<br>
 model 2: hour-classification model<br>
-model 3: SLR autoregressive model<br>
-model 4: GLM with autoregression + hour classification<br><br>
+model 3: SLR AR1 model<br>
+model 4: GLM with AR1 + hour classification<br><br>
+*modelling test results can be found under results.txt in assets*<br><br>
+Summary: We have:<br>
+Model 1: $\sum_{i=1}^{k-1} 	\tau_{i} T_{i}$
+
 
 <br>
 

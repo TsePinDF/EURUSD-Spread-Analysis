@@ -1,0 +1,155 @@
+SSE:  0.002084023259183432
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Spread   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Tue, 19 Dec 2023   Prob (F-statistic):                nan
+Time:                        15:16:12   Log-Likelihood:             2.0858e+07
+No. Observations:             2318595   AIC:                        -4.172e+07
+Df Residuals:                 2318594   BIC:                        -4.172e+07
+Df Model:                           0
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   2.862e-05   1.97e-08   1453.392      0.000    2.86e-05    2.87e-05
+==============================================================================
+Omnibus:                  3572407.700   Durbin-Watson:                   0.182
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       1832846672.306
+Skew:                           9.861   Prob(JB):                         0.00
+Kurtosis:                     139.319   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+SSE:  0.0012556210936629866
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Spread   R-squared:                       0.398
+Model:                            OLS   Adj. R-squared:                  0.397
+Method:                 Least Squares   F-statistic:                 6.651e+04
+Date:                Tue, 19 Dec 2023   Prob (F-statistic):               0.00
+Time:                        15:16:19   Log-Likelihood:             2.1446e+07
+No. Observations:             2318595   AIC:                        -4.289e+07
+Df Residuals:                 2318571   BIC:                        -4.289e+07
+Df Model:                          23
+Covariance Type:            nonrobust
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+category_01    -0.0001   1.84e-07   -725.529      0.000      -0.000      -0.000
+category_02    -0.0001   1.61e-07   -927.678      0.000      -0.000      -0.000
+category_03    -0.0001   1.52e-07   -982.118      0.000      -0.000      -0.000
+category_04    -0.0001    1.6e-07   -933.828      0.000      -0.000      -0.000
+category_05    -0.0001   1.68e-07   -888.023      0.000      -0.000      -0.000
+category_06    -0.0001   1.75e-07   -849.727      0.000      -0.000      -0.000
+category_07    -0.0001   1.68e-07   -884.860      0.000      -0.000      -0.000
+category_08    -0.0001    1.6e-07   -931.658      0.000      -0.000      -0.000
+category_09    -0.0002   1.44e-07  -1043.427      0.000      -0.000      -0.000
+category_10    -0.0002   1.39e-07  -1081.917      0.000      -0.000      -0.000
+category_11    -0.0002   1.42e-07  -1068.553      0.000      -0.000      -0.000
+category_12    -0.0002   1.47e-07  -1039.145      0.000      -0.000      -0.000
+category_13    -0.0002   1.49e-07  -1024.891      0.000      -0.000      -0.000
+category_14    -0.0002   1.47e-07  -1038.304      0.000      -0.000      -0.000
+category_15    -0.0001   1.35e-07  -1106.371      0.000      -0.000      -0.000
+category_16    -0.0002   1.35e-07  -1123.021      0.000      -0.000      -0.000
+category_17    -0.0002   1.35e-07  -1130.619      0.000      -0.000      -0.000
+category_18    -0.0002   1.39e-07  -1102.298      0.000      -0.000      -0.000
+category_19    -0.0002   1.46e-07  -1047.356      0.000      -0.000      -0.000
+category_20    -0.0002   1.48e-07  -1025.047      0.000      -0.000      -0.000
+category_21    -0.0001   1.47e-07   -955.635      0.000      -0.000      -0.000
+category_22    -0.0001   1.52e-07   -984.747      0.000      -0.000      -0.000
+category_23    -0.0001   1.67e-07   -703.768      0.000      -0.000      -0.000
+Intercept       0.0002   1.26e-07   1401.268      0.000       0.000       0.000
+==============================================================================
+Omnibus:                  3830391.167   Durbin-Watson:                   0.302
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       4731779580.437
+Skew:                          10.990   Prob(JB):                         0.00
+Kurtosis:                     223.218   Cond. No.                         41.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+#SSE:  0.0003617617705678061
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Spread   R-squared:                       0.826
+Model:                            OLS   Adj. R-squared:                  0.826
+Method:                 Least Squares   F-statistic:                 1.104e+07
+Date:                Tue, 19 Dec 2023   Prob (F-statistic):               0.00
+Time:                        15:30:18   Log-Likelihood:             2.2888e+07
+No. Observations:             2318595   AIC:                        -4.578e+07
+Df Residuals:                 2318593   BIC:                        -4.578e+07
+Df Model:                           1
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   2.601e-06   1.13e-08    229.398      0.000    2.58e-06    2.62e-06
+SpreadLag1     0.9091      0.000   3322.389      0.000       0.909       0.910
+==============================================================================
+Omnibus:                  1158818.174   Durbin-Watson:                   2.846
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        695495851.207
+Skew:                           1.032   Prob(JB):                         0.00
+Kurtosis:                      87.823   Cond. No.                     3.34e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.34e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+SSE:  0.0003504725457872613
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:                 Spread   R-squared:                       0.832
+Model:                            OLS   Adj. R-squared:                  0.832
+Method:                 Least Squares   F-statistic:                 4.778e+05
+Date:                Tue, 19 Dec 2023   Prob (F-statistic):               0.00
+Time:                        15:45:45   Log-Likelihood:             2.2925e+07
+No. Observations:             2318595   AIC:                        -4.585e+07
+Df Residuals:                 2318570   BIC:                        -4.585e+07
+Df Model:                          24
+Covariance Type:            nonrobust
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+category_01 -2.015e-05   1.08e-07   -186.972      0.000   -2.04e-05   -1.99e-05
+category_02  -2.24e-05   9.94e-08   -225.270      0.000   -2.26e-05   -2.22e-05
+category_03 -2.247e-05   9.57e-08   -234.656      0.000   -2.27e-05   -2.23e-05
+category_04 -2.247e-05   9.93e-08   -226.319      0.000   -2.27e-05   -2.23e-05
+category_05 -2.246e-05   1.03e-07   -218.109      0.000   -2.27e-05   -2.23e-05
+category_06 -2.238e-05   1.06e-07   -210.960      0.000   -2.26e-05   -2.22e-05
+category_07 -2.236e-05   1.03e-07   -217.516      0.000   -2.26e-05   -2.22e-05
+category_08 -2.242e-05   9.92e-08   -225.943      0.000   -2.26e-05   -2.22e-05
+category_09 -2.263e-05   9.25e-08   -244.717      0.000   -2.28e-05   -2.25e-05
+category_10 -2.267e-05   9.04e-08   -250.748      0.000   -2.28e-05   -2.25e-05
+category_11 -2.284e-05   9.18e-08   -248.686      0.000    -2.3e-05   -2.27e-05
+category_12 -2.291e-05   9.39e-08   -244.046      0.000   -2.31e-05   -2.27e-05
+category_13 -2.293e-05   9.49e-08   -241.758      0.000   -2.31e-05   -2.27e-05
+category_14 -2.299e-05   9.43e-08   -243.906      0.000   -2.32e-05   -2.28e-05
+category_15 -2.251e-05   8.85e-08   -254.467      0.000   -2.27e-05   -2.23e-05
+category_16 -2.276e-05   8.86e-08   -256.943      0.000   -2.29e-05   -2.26e-05
+category_17 -2.289e-05   8.87e-08   -258.105      0.000   -2.31e-05   -2.27e-05
+category_18 -2.296e-05   9.04e-08   -253.860      0.000   -2.31e-05   -2.28e-05
+category_19  -2.29e-05   9.33e-08   -245.353      0.000   -2.31e-05   -2.27e-05
+category_20 -2.284e-05   9.45e-08   -241.745      0.000    -2.3e-05   -2.27e-05
+category_21 -2.104e-05   9.14e-08   -230.099      0.000   -2.12e-05   -2.09e-05
+category_22 -2.252e-05   9.58e-08   -235.058      0.000   -2.27e-05   -2.23e-05
+category_23 -1.755e-05   9.73e-08   -180.284      0.000   -1.77e-05   -1.74e-05
+Intercept     2.65e-05   9.04e-08    293.268      0.000    2.63e-05    2.67e-05
+SpreadLag1      0.8493      0.000   2447.051      0.000       0.849       0.850
+==============================================================================
+Omnibus:                  1174137.623   Durbin-Watson:                   2.761
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        675187804.948
+Skew:                           1.076   Prob(JB):                         0.00
+Kurtosis:                      86.572   Cond. No.                     4.42e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.42e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
