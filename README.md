@@ -12,9 +12,9 @@ Sample Data in repo retrieved from DukasCopy by QuantDataManager, 2023/11/15 - 2
 
 ### Step 1: Visualise the naked dataset <br><br>
 ![Fig 1.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot1.png)<br>
-Fig 1. iInitial plot of Spread vs Index (ordered by time of price tick)<br><br>
+Fig 1. Initial plot of Spread vs Index (ordered by time of price tick)<br><br>
 Primary observations:<br>
-    1. There appears to be (slightly consistent) seasons of spikes in spreads
+    1. There appears to be (slightly consistent) seasons of spikes in spreads<br>
     2. Outside of the spikes, spreads sppear to vary around a relatively consistent range
 <br><br>
 That being said, we need to validate these observations.<br>
