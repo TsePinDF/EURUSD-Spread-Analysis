@@ -41,8 +41,10 @@ model 2: hour-classification model<br>
 model 3: SLR AR1 model<br>
 model 4: GLM with AR1 + hour classification<br><br>
 *modelling test results can be found under results.txt in assets*<br><br>
-Summary: We have:<br>
-Model 1: $$\sum_{i=1}^{k-1} \tau_{i} T_{i}$$
+Summary: <br>
+We have:<br>
+Model 1: $$Y = $\overline{y}$ ,<br>
+Model 2: $$Y = \sum_{i=1}^{23} \tau_{i} T_{i}$$, for dummy variables $\T_{i}$, and treament coefficients $\tau_{i}$
 
 
 <br>
