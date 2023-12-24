@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.regression import linear_model
 from scipy.stats import f
+from statsmodels.graphics.gofplots import qqplot
 df = pd.read_csv("assets/2023.12.17EURUSD(2)_TICK_UTCPlus02-TICK-No Session.csv")
 #visualise the df
 #print(df)
@@ -131,3 +132,9 @@ print(f"P-value: {p_value}")
 # P-value: 0.0
 # Reject H0 that treatments are ineffective, aka Hour-Of-Day is significant
 
+# Create a QQ plot For noamlity test
+qqplot(residuals, line='s')  # 's' option adds a standardized line to the plot
+plt.title('Normality QQ Plot of Residuals')
+plt.xlabel('Theoretical Quantiles')
+plt.ylabel('Sample Quantiles')
+plt.show()

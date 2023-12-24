@@ -106,7 +106,7 @@ SSE:  0.0003504725457872613
                             OLS Regression Results
 ==============================================================================
 Dep. Variable:                 Spread   R-squared:                       0.832
-Model:                            OLS   Adj. R-squared:                  0.832
+Model:                            OLS   Adj. R-squared:                  
 Method:                 Least Squares   F-statistic:                 4.778e+05
 Date:                Tue, 19 Dec 2023   Prob (F-statistic):               0.00
 Time:                        15:45:45   Log-Likelihood:             2.2925e+07

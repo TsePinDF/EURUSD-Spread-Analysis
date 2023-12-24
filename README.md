@@ -67,7 +67,11 @@ $p-value: 6.813351...e^{-22}$<br><br>
 With this, we can reject $H_{0} and assume that the dataset is stationary.<br><br>
 When comparing models, we should also validate the significance of additional factors versus the previous model. This should allow us to minimise needless complexity through factors that may be strongly correlated or insignificant factors. Since Model 3 (AR1) is a reduced form of Model 4(AR1 + Hour factor), we will perform a test comparing the Mean Extra Sum-Of-Squares (MSEXT) against the MSE of the full model. The ratio produces an F-statistic, and hence we will use an F distribution.<br><br>
 Formula: $$\frac{MSEXT}{MSE_{model 4}} = \frac{SSEXT / (k - 1)}{SSE_{model 4} / (n - p - k)} \sim {\sf F}(k-1, n-p-k)$$ , k = no. of levels, p = no. of regressors, n = sample size <br>
-$$\frac{a}{b}$$
+$Test Statistic: 3247.15106405486$
+$p-value: 0. 00000...$<br><br>
+With this, we can reject $H_{0} and assume that the treatment effects are significant, hence model 4 will be preferred over model 3.<br><br>
+## Limitations <br>
+Although the adjusted r^2 values are good, the results show some issues that should be addressed in future adjustments. Primarily, the dataset does not appear to follow a normal distribution, which violates a key assumption for any estimations regarding variances (check skew and kurtosis in results.txt). When we perform a normality plot (QQ-plot) 
 
 
 <br>
