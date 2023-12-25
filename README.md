@@ -71,13 +71,18 @@ $Test Statistic: 3247.15106405486$
 $p-value: 0. 00000...$<br><br>
 With this, we can reject $H_{0} and assume that the treatment effects are significant, hence model 4 will be preferred over model 3.<br><br>
 ## Limitations <br>
-Although the adjusted r^2 values are good, the results show some issues that should be addressed in future adjustments. Primarily, the dataset does not appear to follow a normal distribution, which violates a key assumption for any estimations regarding variances (check skew and kurtosis in results.txt). When we perform a normality plot (QQ-plot) 
-
+Although the adjusted r^2 values are good, the results show some issues that should be addressed in future adjustments. Primarily, the dataset does not appear to follow a normal distribution, which violates a key assumption for any estimations regarding variances (check skew and kurtosis in results.txt). When we perform a normality plot (QQ-plot), the curvature of both ends show significantly fat tails on the distribution, congruent with the high levels of kurtosis observed. 
+<br><br>
+![Fig 4.](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot5.png)
+<br>
+Fig 4: Normality qq plot of model 4<br>
+##
+Future renditions should adjust or account for the non-normaltiy of the datset. One method could be to seek additional key factors that could cause extreme events. For instance, it may make sense to incorporate a news release classification variable, in the form of binary outcomes (news releasing vs no news) or a multi-level factor (news impact). Another method would be to perform transformations to the dataset to address the kurtosis, such as Box-Cox, logarithmic or square root transformations. However, this may impact the way we interpret the model so it should only be considered as a last resort.<br>
 
 <br>
 
 ## Additional Notes and Graphs <br><br>
 ![FigExtra1](https://github.com/TsePinDF/Portfolio1_EURUSDSpreadAnalysis/blob/main/assets/Plot4.png)<br>
 Plot of differencing lags [Delta at t vs Delta at t-1]<br><br>
-To do and update test for significance later
+Additional plot of Differencing factor applied to dataset 
 
